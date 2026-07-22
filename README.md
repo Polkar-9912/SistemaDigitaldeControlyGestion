@@ -2,7 +2,6 @@
 
 ![Estado del Proyecto](https://img.shields.io/badge/Estado-Producci%C3%B3n-success)
 ![Versi%C3%B3n](https://img.shields.io/badge/Versi%C3%B3n-1.0.0-blue)
-![Licencia](https://img.shields.io/badge/Licencia-MIT-green)
 
 PetroControl es un sistema integral de gestión y monitoreo en tiempo real diseñado para estaciones de servicio. Permite la administración de inventarios de combustible, registro transaccional de ventas y un sistema automatizado de alertas críticas por hardware simulado (indicadores LED de estado).
 
