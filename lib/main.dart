@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'screens/main_layout.dart';
 
-// El main debe ser asíncrono para esperar a que Supabase se conecte
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Inicialización de Supabase. Reemplaza con tus credenciales reales.
+  // Cargamos el archivo .env
+  await dotenv.load(fileName: ".env");
+
+  // Leemos las variables usando dotenv.env
   await Supabase.initialize(
-    url: 'https://avzprrexpamgujctredm.supabase.co',
-    anonKey: 'sb_publishable_kbD3h45PnhWse9k0xime8w_qmyfub_n',
+    url: dotenv.env['SUPABASE_URL']!,
+    anonKey: dotenv.env['SUPABASE_ANON_KEY']!,
   );
 
   runApp(const PetroControlApp());
