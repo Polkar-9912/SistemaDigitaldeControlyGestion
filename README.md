@@ -29,7 +29,7 @@ Este proyecto fue desarrollado utilizando un stack moderno para asegurar un rend
 
 ---
 
-## 🚀 Características Principales
+##  Características Principales
 
 * **Monitoreo en Vivo (Dashboard):** Visualización del estado de los surtidores con indicadores de capacidad y alertas LED (Verde: Óptimo, Amarillo: Bajo, Rojo: Crítico).
 * **Gestión de Ventas:** Registro detallado de despachos, cálculo automático de subtotales por tipo de combustible y métodos de pago.
